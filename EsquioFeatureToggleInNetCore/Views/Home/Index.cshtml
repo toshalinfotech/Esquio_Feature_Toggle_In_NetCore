@@ -1,0 +1,16 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <feature names="@FeatureFlags.SeeDetails">
+        <a href="/home/seedata">See Details</a>
+    </feature>
+    <feature names="@FeatureFlags.SeeHostDetails">
+        <a href="/home/SeeHostDetails">See Host Details</a>
+    </feature>
+    <feature names="@FeatureFlags.SeeAdminDetails">
+        <a href="/home/SeeAdminDetails">See Admin Details</a>
+    </feature>
+</div>
